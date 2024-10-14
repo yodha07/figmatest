@@ -317,6 +317,11 @@ footer {
     height: 32px;
 }
 
+.figma a{
+    text-align: center;
+    padding: 0 10px;
+    text-decoration:underline wavy 2px black;
+}
 /* Instead of writing one media query and adding all elements I've made several media queries for the respected section/divs of the page*/
 
 @media screen and (max-width: 768px) {
