@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel = "stylesheet" href="/css/style.css">
+<script src="/js/index.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Test Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Logo</h1>
+            
+            <ul>
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Community</li>
+                <li>Support</li>
+            </ul>
+
+            <div class="nav-btns">
+                <button class="login-btn">Login</button>
+                <button class="reg-btn" onclick="takeToForm()">Register</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="first-ele">
+        <img src="/we.png" class="first-ele-image"/>
+        <div class="first-ele-intro">
+            <h1>The largest community of photo enthusiasts</h1>
+            <button class="intro-btn">Join Today</button>
+        </div>
+    </div>
+
+    <div class="info-grid">
+        <h1>Snap photos and share like never before</h1>
+    </div>
+
+    <div class="info-cards">
+        <div class="card-one">
+            <h2>Card One</h2>
+            <p class="desc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                Neque porro quisquam est.
+            </p>
+
+            <button class="lrn-more"> Learn More</button>
+        </div>
+
+        <div class="card-two">
+            <h2>Card two</h2>
+            <p class="desc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                Neque porro quisquam est.
+            </p>
+
+            <button class="lrn-more"> Learn More</button>
+        </div>
+
+        <div class="card-three">
+            <h2>Card three</h2>
+            <p class="desc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                Neque porro quisquam est.
+            </p>
+
+            <button class="lrn-more"> Learn More</button>
+        </div>
+
+        <div class="card-four">
+            <h2>Card four</h2>
+            <p class="desc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                Neque porro quisquam est.
+            </p>
+
+            <button class="lrn-more"> Learn More</button>
+        </div>
+    </div>
+
+    <div class="second-ele-intro">
+        <h1>Have you ever posted any photo on social media?</h1>
+        <p class="desc-second-ele">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore
+        </p>
+    </div>
+
+    <div class="second-ele">
+
+        <div class="second-ele-grid">
+
+            <div class="ele-one">
+                <h2>Sed ut perspiciatis</h2>
+                <p class="desc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                Neque porro quisquam est.
+                </p>
+            </div>
+
+            <div class="ele-two">
+                <h2>Lorem ipsum dolor</h2>
+                <p class="desc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                Neque porro quisquam est.
+                </p>
+            </div>
+
+            <div class="ele-three">
+                <h2>Nemo enim ipsam</h2>
+                <p class="desc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                Neque porro quisquam est.
+                </p>
+            </div>
+        </div>
+                
+        <div class="second-ele-image">
+                    <img src="second.png" class="second-ele-img">
+        </div>
+    </div>
+
+    <div class="third-ele-intro">
+        <h1>Make your photos more stylish</h1>
+        <p class="desc-second-ele">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore
+        </p>
+    </div>
+
+    <div class="third-ele-grid">
+        <div class="card">
+            <img src="/one.png"/>
+            <h1>Sed ut perspiciatis</h1>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+            aut odit aut fugit, sed quia.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="/two.png"/>
+            <h1>Lorem ipsum dolor</h1>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+            aut odit aut fugit, sed quia.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="/three.png"/>
+            <h1>Nemo enim ipsam</h1>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+                aut odit aut fugit, sed quia.
+            </p>
+        </div>
+    </div>    
+
+    <div class="fourth-ele-intro" id="focus-form">
+        <h1>Ready to take a free trial?</h1>
+            <p class="desc-second-ele">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore
+            </p>
+    </div>
+
+    <div class="form-container">
+            <form class="signup">
+                <h2>Sign up for a free account</h2>
+                    <div class="form">
+                        <input type="text" placeholder="First Name" >
+                        <input type="text" placeholder="Last name" >
+                        <input type="email" placeholder="Email address" >
+                        <input type="tel" placeholder="Phone Number" >
+                        <input type="password" placeholder="Create password" >
+                    </div>
+
+                <button type="submit" class="reg-form-btn" onclick="validateForm()">Register</button>
+            </form>
+    </div>
+        
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1>Logo</h1>
+            </div>
+    
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Mobile App</h3>
+                    <ul>
+                        <li>Features</li>
+                        <li>Live share</li>
+                        <li>Video record</li>
+                    </ul>
+                </div>
+    
+                <div class="footer-column">
+                    <h3>Community</h3>
+                    <ul>
+                        <li>Featured artists</li>
+                        <li>The Portal</li>
+                        <li>Live events</li>
+                    </ul>
+                </div>
+    
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li>About us</li>
+                        <li>Contact us</li>
+                        <li>History</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-buttons">
+                <button class="reg-btn">Register</button>
+                <button class="login-btn">Log in</button>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© Photoa, Inc. 2019. We love our users!</p>
+            <div class="footer-social">
+                <span>Follow us:</span>
+                <img src="/f.png"/>
+                <img src="/tw.png"/>
+                <img src="/in.png"/>
+                <img src="/ig.png"/>
+            </div>
+        </div>
+    </footer>    
+
+</body>
+</html>

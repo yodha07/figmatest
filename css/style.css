@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Montserrat, Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: #f5f5f5;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.nav-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn{
+    color: rgb(0, 191, 255);
+    border-color: rgb(0, 191, 255);
+    border-style: solid;
+    border-radius: 6px;
+}
+
+.reg-btn{
+    color: #fff;
+    border-color: rgb(0, 191, 255);
+    background-color: rgb(0, 191, 255);
+    border-style: solid;
+    border-radius: 6px;
+}
+
+.intro-btn{
+    color: #fff;
+    border-color: rgb(0, 191, 255);
+    background-color: rgb(0, 191, 255);
+    border-style: solid;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: larger;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.first-ele{
+    display: flex;
+}
+
+.first-ele{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 40dvh;
+    overflow: hidden;
+}
+
+.first-ele-image{
+    filter:brightness(.5);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.first-ele-intro {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.info-grid{
+    padding-left: 100px;
+    margin-top: 100px;
+}
+
+.info-cards{
+    display: grid;
+    grid-template-columns: .4fr .4fr;
+    grid-template-rows: .5fr .5fr;
+    grid-template-areas: 'one two'
+    'three four';
+    padding-left: 100px;
+    margin-top: 20px;
+    gap: 50px;
+    column-gap: 350px;
+}
+
+.desc{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.desc-second-ele{
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.lrn-more{
+    color: #fff;
+    border-color: rgb(0, 191, 255);
+    background-color: rgb(0, 191, 255);
+    border-style: solid;
+    border-radius: 6px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.second-ele{
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    padding-left: 100px;
+}
+
+.second-ele-intro{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.second-ele-grid{
+    display: grid;
+    grid-template-columns: .7fr ;
+    grid-template-rows: .5fr ;
+    grid-template-areas: 'one'
+    'two'
+    'three';
+    gap: 20px;
+    align-items: start;
+    margin-top: 100px;
+}
+
+.ele-one, .ele-two, .ele-three {
+   text-align: left;
+}
+
+.ele-two{
+    grid-area: two;
+}
+
+.ele-three{
+    grid-area: three;
+}
+
+.second-ele-image {
+    margin-top: 50px;
+    padding-right: 100px;
+}
+
+.second-ele-img {
+    display: flex;
+    height: 70dvh;
+    object-fit: cover;
+}
+
+.third-ele-intro{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.third-ele-grid{
+    margin-top: 100px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: .1fr .1fr .1fr;
+    gap: 50px;
+}
+
+.third-ele-grid h1{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.third-ele-grid p{
+    font-size: larger;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.card{
+    border: solid 1px #cccc;
+}
+
+.fourth-ele-intro{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.form-container{
+    border: solid 1px #ddd;
+    padding: 30px;
+    width: 500px;
+    margin: 100px auto;
+}
+
+.signup h2{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form input[type="password"] {
+    grid-column: span 2;
+}
+
+.reg-form-btn{
+    color: #fff;
+    border-color: rgb(0, 191, 255);
+    background-color: rgb(0, 191, 255);
+    border-style: solid;
+    border-radius: 6px;
+    font-size: larger;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px 100px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-column h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #555;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social img{
+    width: 32px;
+    height: 32px;
+}
+
+/* Instead of writing one media query and adding all elements I've made several media queries for the respected section/divs of the page*/
+
+@media screen and (max-width: 768px) {
+    nav {
+      padding: 10px 50px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-btns {
+      margin-top: 20px;
+    }
+  
+    .first-ele-intro h1 {
+      font-size: 1.8rem;
+    }
+  
+    .login-btn, .reg-btn {
+      padding: 5px 20px;
+      font-size: 1rem;
+    }  
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+      padding: 10px 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 5px;
+      text-align: center;
+    }
+  
+    .nav-btns {
+      flex-direction: column;
+      gap: 5px;
+      margin-top: 10px;
+    }
+  
+    .login-btn, .reg-btn {
+      width: 100%;
+      padding: 10px 0;
+    }
+  
+    .first-ele-intro h1 {
+      font-size: 1.5rem;
+    }
+  
+    .intro-btn {
+      padding: 10px;
+      font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .first-ele {
+        height: 30vh; 
+    }
+
+    .first-ele-image {
+        height: 100%;
+    }
+
+    .first-ele-intro h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro-btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .first-ele {
+        height: 25vh;
+    }
+
+    .first-ele-image {
+        height: 100%;
+    }
+
+    .first-ele-intro h1 {
+        font-size: 1.2rem;
+    }
+
+    .intro-btn {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info-cards {
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+    }
+
+    .info-cards h2 {
+        font-size: 1.2rem;
+    }
+
+    .info-cards p {
+        font-size: 1rem;
+    }
+
+    .lrn-more {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-cards {
+        gap: 10px;
+        padding-left: 10px;
+    }
+
+    .info-cards h2 {
+        font-size: 1rem;
+    }
+
+    .info-cards p {
+        font-size: 0.9rem;
+    }
+    
+    .info-grid{
+        padding-left: 10px;
+    }
+
+    .lrn-more {
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .second-ele {
+        flex-direction: column; 
+        padding-left: 20px;
+    }
+
+    .second-ele-image {
+        margin-top: 20px;
+        padding-right: 0;
+    }
+
+    .second-ele-img {
+        height: 40vh;
+    }
+
+    .second-ele-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .second-ele-grid h2 {
+        font-size: 1.3rem;
+    }
+
+    .second-ele-grid p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .second-ele-img {
+        height: 30vh;
+        width:100%;
+        padding-right: 20px;
+    }
+
+    .second-ele-grid h2 {
+        font-size: 1.1rem;
+    }
+
+    .second-ele-grid p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .third-ele-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .third-ele-grid h1 {
+        margin-left: 20px;
+        font-size: 1.3rem;
+    }
+
+    .third-ele-grid p {
+        margin-left: 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .third-ele-grid h1 {
+        font-size: 1.1rem;
+        margin-left: 10px;
+    }
+
+    .third-ele-grid p {
+        font-size: 0.9rem;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%; 
+        padding: 20px;
+    }
+
+    .form input {
+        padding: 8px;
+    }
+
+    .reg-form-btn {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .form input {
+        padding: 6px;
+    }
+
+    .reg-form-btn {
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-buttons {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer{
+        padding: 20px 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-bottom p {
+        margin-bottom: 10px;
+    }
+}
